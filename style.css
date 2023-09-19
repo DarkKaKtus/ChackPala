@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Стили для шапки сайта */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center; /* Центрируем содержимое */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Центрируем кнопки внутри меню */
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s; /* Добавляем плавное изменение цвета */
+}
+
+nav a:hover {
+    color: #ff6600; /* Цвет при наведении */
+}
+
+/* Стили для раздела с информацией о книге */
+.book-cover {
+    text-align: center;
+}
+
+#book-cover {
+    max-width: 180px; /* Уменьшенный размер обложки */
+    transition: transform 0.2s; /* Добавляем анимацию изменения размера */
+    cursor: pointer;
+}
+
+#book-cover:hover {
+    transform: scale(1.1); /* Увеличение при наведении */
+}
+
+h3{
+    text-align: center;
+}
+
+.book-cover img {
+    max-width: 200px;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.book-cover img:hover {
+    transform: scale(1.1);
+}
+
+/* Стили для новых разделов */
+.book-sectiontwo {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto; /* Центрируем по горизонтали */
+    max-width: 800px; /* Задаем максимальную ширину */
+    border: 1px solid #ccc; /* Белая рамка */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.book-sectiontwwo {
+    background-color: #ffffff8e;
+    padding: 20px;
+    margin: 20px auto; /* Центрируем по горизонтали */
+    max-width: 800px; /* Задаем максимальную ширину */
+    border: 1px solid #ccc; /* Белая рамка */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.book-sectionone {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto; /* Центрируем по горизонтали */
+    max-width: 1000px; /* Задаем максимальную ширину */
+    border: 1px solid #ccc; /* Белая рамка */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.book-sectionthree {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto; /* Центрируем по горизонтали */
+    max-width: 600px; /* Задаем максимальную ширину */
+    border: 1px solid #ccc; /* Белая рамка */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+.book-info {
+    background-image:url(chakchak.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    margin: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.book-info img {
+    max-width: 100%;
+}
+
+/* Стили для кнопки "Купить" */
+button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #cc5500;
+}
+
+/* Стили для подвала сайта */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
