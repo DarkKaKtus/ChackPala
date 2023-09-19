@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Продажа книги "Бойцовский клуб"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">О книге</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="book-info">
+            <div class="book-cover">
+                <button id="prev-button">Предыдущая</button>
+                <img src="chak.jpg" alt="Обложка книги" id="book-cover">
+                
+                <button id="next-button">Следующая</button>
+            </div>
+            <button>Купить</button>
+            
+        </section>
+        
+    <section class="book-sectionone">
+        <h2>О книге</h2>
+        <h4>Главный герой цикла – офисный клерк, который страдает хронической бессонницей и ходит в группы психологической поддержки для больных людей. В попытках разнообразить свою жизнь он знакомится с Тайлером Дёрденом, человеком со странной и радикальной философией: самосовершенствование – для слабаков, а саморазрушение – единственное, ради чего стоит жить. Спустя некоторое время знакомые создают подпольный бойцовский клуб, который притягивает всех, кто хочет уничтожить современное общество «белых воротничков».</h4>
+    </section>
+
+    
+        <section class="book-sectiontwo">
+            <section class="book-sectiontwwo">
+                <h2>Отзывы</h2>
+            </section>
+        <h3>Иван Петров<br>
+            
+            Оценка: ★★★★★</h3>
+            
+            <h4>"Книга 'Бойцовский клуб' - это настоящая бомба! Я читал ее за одну ночь и просто не мог оторваться. Сюжет увлекательный, персонажи уникальные, а финал оставил меня в шоке. Рекомендую всем!"</h4>
+            
+            <h3>Анна Смирнова<br>
+            
+            Оценка: ★★★★☆</h3>
+            
+           <h4> "Я уже прочитала эту книгу дважды! Она заставляет задуматься о многих вещах. Паланик создал удивительный мир и неожиданные повороты сюжета."</h4>
+            
+            <h3>Михаил Васильев<br>
+            
+            Оценка: ★★★★☆</h3>
+            
+            <h4>"После прочтения 'Бойцовского клуба' я начал задумываться о своей жизни по-новому. Книга полна философии и вызывает много важных вопросов."</h4>
+    </section>
+
+    <section class="book-sectionthree">
+        <h2>Контакты</h2>
+        <h4>Адрес:
+
+            123456, г.Томск, ул.Шайлушайево, Дом 5<br>
+            
+            Телефон:
+            
+            +7 (123) 456-78-90<br>
+            
+            Электронная почта:
+            
+            info@bookstore.com<br>
+            
+            График работы:
+            
+            Пн-Пт: 9:00 - 18:00
+            
+            Сб-Вс: Выходной</h4>
+    </section>
+    
+    </main>
+    <footer>
+        <p>&copy; 2023 Продажа книги "Бойцовский клуб"</p>
+    </footer>
+<script>
+    // JavaScript для переключения картинок
+const bookCover = document.getElementById("book-cover");
+const prevButton = document.getElementById("prev-button");
+const nextButton = document.getElementById("next-button");
+
+// Список картинок для переключения
+const images = ["chak.jpg", "chak2.jpg", "chak3.jpg"];
+let currentImageIndex = 0;
+
+// Функция для отображения следующей картинки
+function showNextImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    bookCover.src = images[currentImageIndex];
+}
+
+// Функция для отображения предыдущей картинки
+function showPrevImage() {
+    currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
+    bookCover.src = images[currentImageIndex];
+}
+
+// Добавляем обработчики событий для кнопок
+nextButton.addEventListener("click", showNextImage);
+prevButton.addEventListener("click", showPrevImage);
+</script>
+</body>
+</html>
